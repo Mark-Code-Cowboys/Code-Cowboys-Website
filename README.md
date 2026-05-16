@@ -19,6 +19,16 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
+## ⚙️ Prerequisites
+
+- **Node:** This project requires Node.js >=22.12.0 (see `engines` in `package.json`). Use `nvm`/`corepack` or your system package manager to install Node.
+- **Install & Run (from project root):**
+
+```sh
+npm install
+npm run dev
+```
+
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.

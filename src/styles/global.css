@@ -94,3 +94,31 @@ h2 {
   .inner { padding: 0 20px; }
   h2 { font-size: 28px; }
 }
+.app-card-upcoming {
+  position: relative;
+  opacity: 0.7;
+}
+
+.up-next-banner {
+  position: absolute;
+  top: 20px;
+  right: -8px;
+  background: var(--gold);
+  color: var(--bg);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 2px 0 0 2px;
+}
+
+.up-next-banner::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  border-width: 6px 8px 0 0;
+  border-style: solid;
+  border-color: #7a5010 transparent transparent transparent;
+}
