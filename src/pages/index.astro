@@ -1,17 +1,505 @@
 ---
-
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base>
+  <Nav />
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Michigan · Mobile App Studio</div>
+      <h1>Built for the trail.<br>Not the <em>boardroom.</em></h1>
+      <p>Code Cowboys builds practical, well-engineered mobile and web apps for people who actually use them — starting with tools for health and the outdoors.</p>
+      <div class="hero-ctas">
+        <a href="#apps" class="btn">See Our Apps</a>
+        <a href="mailto:hello@code-cowboys.com" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="phones">
+      <div class="phone phone-sm">
+        <div class="phone-dot"></div>
+        <div class="phone-screen">
+          <div class="ph-bar"></div>
+          <div class="ph-bar2"></div>
+          <div class="ph-block"></div>
+          <div class="ph-bar2" style="width:50%"></div>
+        </div>
+        <div class="phone-label">Health</div>
+      </div>
+      <div class="phone phone-lg">
+        <div class="phone-dot"></div>
+        <div class="phone-screen">
+          <div class="ph-bar"></div>
+          <div class="ph-bar2"></div>
+          <div class="ph-block"></div>
+          <div class="ph-bar2" style="width:60%"></div>
+          <div class="ph-bar2" style="width:40%"></div>
+        </div>
+        <div class="phone-label">Field</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="strip-item"><div class="strip-num">iOS</div><div class="strip-label">& Android</div></div>
+    <div class="strip-item"><div class="strip-num">2</div><div class="strip-label">Live Products</div></div>
+    <div class="strip-item"><div class="strip-num">MI</div><div class="strip-label">Based & Built</div></div>
+    <div class="strip-item"><div class="strip-num">SaaS</div><div class="strip-label">Sub Model</div></div>
+  </div>
+
+  <!-- APPS -->
+  <section class="apps-section inner" id="apps">
+    <div class="section-label">Our Apps</div>
+    <h2>Built for real people</h2>
+    <p class="section-sub">We focus on niche markets that big tech ignores — and build tools those communities actually want to use every day.</p>
+    <div class="apps-grid">
+      <div class="app-card">
+        <div class="app-tag">Health & Wellness</div>
+        <h3>Dietary Sensitivity Tracker</h3>
+        <p>Track what your body reacts to — starting with nickel and expanding to whatever sensitivities matter to you. Built for clarity, not complexity, with your data staying exactly where it belongs: on your device.</p>
+        <div class="platforms">
+          <span class="pill">iOS</span>
+          <span class="pill">Android</span>
+        </div>
+        <div class="privacy-note">
+          <i class="ti ti-device-mobile"></i>
+          <p>Your data stays on your device. No accounts, no cloud sync, no data collection — ever.</p>
+        </div>
+        <a href="/apps/dst" class="app-link">Learn more →</a>
+      </div>
+      <div class="app-card">
+        <div class="app-tag">Outdoors & Field Sports</div>
+        <h3>Get Out There</h3>
+        <p>A field journal for hunters, anglers, and outdoor enthusiasts — log trips, track patterns, and build a record of every time you got out there.</p>
+        <div class="platforms">
+          <span class="pill">iOS</span>
+          <span class="pill">Android</span>
+          <span class="pill">Web — coming soon</span>
+        </div>
+        <a href="/apps/got" class="app-link">Learn more →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <div class="about-wrap" id="about">
+    <div class="about-inner inner">
+      <div>
+        <div class="about-icon">🤠</div>
+        <div class="section-label">About</div>
+        <h2>Michigan-built.<br>Developer-led.</h2>
+        <p>Code Cowboys LLC is a Michigan-based software studio building practical, well-engineered applications for underserved markets.</p>
+        <p>Led by a developer with extensive experience in software development across multiple platforms and industries — we believe the best software is built by people who understand the problem firsthand.</p>
+      </div>
+      <div>
+        <div class="section-label" style="margin-bottom:16px">What we stand for</div>
+        <div class="vals">
+          <div class="val"><h4>Practical over flashy</h4><p>Tools that solve real problems for specific people — not features that look good in a pitch deck.</p></div>
+          <div class="val"><h4>Niche markets, real users</h4><p>We go where big tech doesn't bother. Smaller audiences, higher loyalty, better products.</p></div>
+          <div class="val"><h4>Development discipline</h4><p>Built right the first time. Software that earns trust over time because it just works.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEEDBACK -->
+  <div class="feedback-wrap">
+    <div class="feedback-inner inner">
+      <div>
+        <div class="section-label">Heard something? Got an idea?</div>
+        <h2>Your input shapes what we build next.</h2>
+        <p>We're a small studio and we read every message. If one of our apps is missing something obvious, something's broken, or you've got an idea for a feature — we want to hear it.</p>
+        <p>No support ticket system. No chatbot. Just a real email that goes straight to the developers building the software.</p>
+        <div class="email-block">
+          <a href="mailto:hello@code-cowboys.com" class="email-primary">
+            <i class="ti ti-mail"></i>
+            hello@code-cowboys.com
+          </a>
+          <a href="mailto:Mark@Code-Cowboys.com" class="email-secondary">
+            <i class="ti ti-user"></i>
+            or reach Mark directly — Mark@Code-Cowboys.com
+          </a>
+        </div>
+      </div>
+      <div class="ftypes">
+        <div class="ftype"><i class="ti ti-bug"></i><div><h4>Found a bug?</h4><p>Tell us what happened and what you expected. Screenshots welcome.</p></div></div>
+        <div class="ftype"><i class="ti ti-bulb"></i><div><h4>Feature idea?</h4><p>We keep a running list. Good ideas from real users move to the top of it.</p></div></div>
+        <div class="ftype"><i class="ti ti-map"></i><div><h4>Whole new app?</h4><p>If there's a gap in your niche that nobody's filling well, pitch it to us.</p></div></div>
+        <div class="ftype"><i class="ti ti-heart"></i><div><h4>Just want to say hi?</h4><p>That works too. We're real people who like hearing from users.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+</Base>
+
+<style>
+  /* HERO */
+  .hero {
+    padding: 80px 40px 70px;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 40px;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--gold-dim);
+    padding: 5px 14px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 1.05;
+    color: #f5ead6;
+    margin-bottom: 20px;
+  }
+  .hero h1 em { color: var(--gold); font-style: normal; }
+
+  .hero p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 36px;
+    font-weight: 300;
+    max-width: 480px;
+  }
+
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  /* PHONES */
+  .phones {
+    display: flex;
+    gap: 14px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .phone {
+    border: 2px solid rgba(201,144,30,0.4);
+    border-radius: 20px;
+    background: var(--bg2);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .phone-lg { width: 100px; height: 180px; }
+  .phone-sm { width: 82px; height: 150px; margin-bottom: 14px; }
+
+  .phone-dot {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 22px;
+    height: 3px;
+    background: rgba(201,144,60,0.3);
+    border-radius: 2px;
+  }
+
+  .phone-screen {
+    width: calc(100% - 10px);
+    height: calc(100% - 22px);
+    background: var(--bg3);
+    border-radius: 14px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .ph-bar { height: 5px; border-radius: 3px; background: rgba(201,144,30,0.5); }
+  .ph-bar2 { height: 5px; border-radius: 3px; background: rgba(201,144,30,0.2); width: 70%; }
+  .ph-block { flex: 1; border-radius: 6px; background: rgba(201,144,30,0.08); }
+
+  .phone-label {
+    position: absolute;
+    bottom: 7px;
+    font-size: 7px;
+    color: rgba(201,144,30,0.5);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  /* STRIP */
+  .strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .strip-item {
+    padding: 26px 30px;
+    border-right: 1px solid var(--border);
+  }
+  .strip-item:last-child { border-right: none; }
+
+  .strip-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .strip-label {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* APPS */
+  .apps-section { padding: 70px 40px; }
+
+  .apps-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  .app-card {
+    background: var(--bg2);
+    padding: 34px 32px;
+  }
+
+  .app-tag {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+
+  .app-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+
+  .app-card p {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.7;
+    margin-bottom: 18px;
+    font-weight: 300;
+  }
+
+  .platforms {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+
+  .pill {
+    font-size: 10px;
+    color: var(--text-dim);
+    border: 1px solid rgba(120,100,72,0.35);
+    padding: 3px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+  }
+
+  .privacy-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: rgba(201,144,30,0.06);
+    border: 1px solid rgba(201,144,30,0.2);
+    border-radius: 4px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+  }
+  .privacy-note i { color: var(--gold); font-size: 15px; margin-top: 1px; flex-shrink: 0; }
+  .privacy-note p {
+    font-size: 12px;
+    color: #8a7254;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .app-link {
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    transition: opacity 0.2s;
+  }
+  .app-link:hover { opacity: 0.7; }
+
+  /* ABOUT */
+  .about-wrap {
+    background: var(--bg3);
+    padding: 70px 0;
+  }
+
+  .about-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .about-icon {
+    width: 58px;
+    height: 58px;
+    border: 1px solid var(--gold-dim);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 22px;
+  }
+
+  .about-inner p {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin-bottom: 14px;
+    font-weight: 300;
+  }
+
+  .vals { display: flex; flex-direction: column; gap: 2px; }
+
+  .val {
+    background: var(--bg);
+    padding: 20px 22px;
+  }
+
+  .val h4 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #d4b87a;
+    margin-bottom: 6px;
+  }
+
+  .val p {
+    font-size: 13px;
+    color: var(--text-faint);
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  /* FEEDBACK */
+  .feedback-wrap { padding: 70px 0; border-top: 1px solid var(--border-gold); }
+
+  .feedback-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .feedback-inner p {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.75;
+    font-weight: 300;
+    margin-bottom: 14px;
+  }
+
+  .email-block { display: flex; flex-direction: column; gap: 12px; margin-top: 26px; }
+
+  .email-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(201,144,30,0.1);
+    border: 1px solid var(--gold-dim);
+    color: var(--gold);
+    padding: 13px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .email-primary:hover { background: rgba(201,144,30,0.18); }
+
+  .email-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-faint);
+    font-size: 12px;
+    transition: color 0.2s;
+  }
+  .email-secondary:hover { color: var(--gold); }
+
+  .ftypes { display: flex; flex-direction: column; gap: 2px; }
+
+  .ftype {
+    background: var(--bg2);
+    padding: 20px 22px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .ftype i { font-size: 20px; color: var(--gold); margin-top: 1px; flex-shrink: 0; }
+
+  .ftype h4 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #d4b87a;
+    margin-bottom: 4px;
+  }
+
+  .ftype p {
+    font-size: 12px;
+    color: var(--text-faint);
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 50px 20px 40px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 36px; }
+    .hero p { max-width: 100%; }
+    .hero-ctas { justify-content: center; }
+    .phones { display: none; }
+
+    .strip { grid-template-columns: repeat(2, 1fr); }
+    .strip-item:nth-child(2) { border-right: none; }
+    .strip-item:nth-child(3) { border-top: 1px solid var(--border); }
+    .strip-item { padding: 20px; }
+
+    .apps-section { padding: 50px 20px; }
+    .apps-grid { grid-template-columns: 1fr; }
+
+    .about-wrap { padding: 50px 0; }
+    .about-inner { grid-template-columns: 1fr; gap: 36px; }
+
+    .feedback-wrap { padding: 50px 0; }
+    .feedback-inner { grid-template-columns: 1fr; gap: 36px; }
+  }
+</style>
