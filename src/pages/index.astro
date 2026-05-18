@@ -44,11 +44,13 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <!-- STRIP -->
-  <div class="strip">
-    <div class="strip-item"><div class="strip-num">iOS</div><div class="strip-label">& Android</div></div>
-    <div class="strip-item"><div class="strip-num">2</div><div class="strip-label">Live Products</div></div>
-    <div class="strip-item"><div class="strip-num">MI</div><div class="strip-label">Based & Built</div></div>
-    <div class="strip-item"><div class="strip-num">SaaS</div><div class="strip-label">Sub Model</div></div>
+  <div class="strip-wrap">
+    <div class="strip">
+      <div class="strip-item"><div class="strip-num strip-num-platform">iOS</div><div class="strip-label">& Android</div></div>
+      <div class="strip-item"><div class="strip-num">2</div><div class="strip-label">Live Products</div></div>
+      <div class="strip-item"><div class="strip-num">MI</div><div class="strip-label">Based & Built</div></div>
+      <div class="strip-item"><div class="strip-num">SaaS</div><div class="strip-label">Sub Model</div></div>
+    </div>
   </div>
 
   <!-- APPS -->
@@ -262,12 +264,29 @@ import Footer from '../components/Footer.astro';
     line-height: 1;
   }
 
+    .strip-num-platform {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+
   .strip-label {
     font-size: 11px;
     color: var(--text-dim);
     margin-top: 5px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+
+    .strip-wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  @media (max-width: 768px) {
+    .strip-wrap { padding: 0 20px; }
   }
 
   /* APPS */
